@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <h1>Projects</h1>
-     <button type="button" class="button" @click="addProject()">Add New Project</button>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -27,11 +26,6 @@ export default {
   name: 'Projects',
   mounted () {
     this.$store.dispatch('FETCH_PROJECTS')
-  },
-   methods: {
-    addProject () {
-      this.$store.dispatch('ADD_NEW_PROJECT')
-    }
   },
   computed: mapState([
     'projects'

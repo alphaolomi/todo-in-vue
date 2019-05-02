@@ -21,8 +21,8 @@ export default new Vuex.Store({
                     commit('SET_PROJECTS', projects)
                 })
         },
-        ADD_NEW_PROJECT({ commit }) {
-            axios.post('https://jsonplaceholder.typicode.com/todos')
+        ADD_NEW_PROJECT({ commit }, userId, title, completed) {
+            axios.post('https://jsonplaceholder.typicode.com/todos', { userId, title, completed })
                 .then(r => r.data)
                 .then(project => {
                     commit('ADD_PROJECT', { project })
