@@ -1,17 +1,18 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Welcome msg="Projects Management System"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Welcome from './components/Welcome.vue'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Welcome
   }
 }
 </script>
