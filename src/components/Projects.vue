@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <table class="table table-striped">
+    <h1>Projects</h1>
+    <!-- <table class="table table-striped">
       <thead>
         <tr>
           <th>ID</th>
@@ -15,7 +16,7 @@
           <td>{{ project.completed }}</td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
   </div>
 </template>
 

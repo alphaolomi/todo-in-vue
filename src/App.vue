@@ -6,6 +6,8 @@
       <router-link to="/projects">Projects</router-link>
       <router-link to="/register">Register</router-link>
       <router-link to="/login">Login</router-link>
+      <router-link to="/project/1">Project</router-link>
+      <router-link to="/redirect">Redirect</router-link>
     </nav>
     <router-view/>
   </div>
