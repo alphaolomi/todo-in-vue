@@ -1,25 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Welcome msg="Projects Management System"/>
+    <nav>
+      <router-link to="/">Index</router-link>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/projects">Projects</router-link>
+      <router-link to="/register">Register</router-link>
+      <router-link to="/login">Login</router-link>
+    </nav>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Welcome from './components/Welcome.vue'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 export default {
-  name: 'app',
-  components: {
-    Welcome
-  }
-}
+  name: "app"
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
