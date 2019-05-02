@@ -7,6 +7,7 @@ import Login from './components/Login.vue';
 import Project from './components/Project.vue';
 import Projects from './components/Projects.vue';
 import Redirect from './components/Redirect.vue';
+import Error from './components/404.vue';
 
 
 const routes = [
@@ -17,6 +18,7 @@ const routes = [
     { path: '/project/:id', component: Project ,name:'project'},
     { path: '/projects', component: Projects ,name:'projects'},
     { path: '/redirect', component: Redirect, name: 'redirect' },
+    { path: '/404', component: Error, name: '404' },
 ];
 
 export default routes;
