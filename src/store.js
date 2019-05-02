@@ -13,18 +13,30 @@ export default new Vuex.Store({
         projects: []
     },
     actions: {
-        loadProjects ({ commit }) {
+        FETCH_PROJECTS({ commit }) {
             axios
-              .get('https://jsonplaceholder.typicode.com/todos')
-              .then(r => r.data)
-              .then(projects => {
-              console.log(projects)
-              })
-          }
+                .get('https://jsonplaceholder.typicode.com/todos?_limit=3')
+                .then(r => r.data)
+                .then(projects => {
+                    commit('SET_PROJECTS', projects)
+                })
+        },
+        ADD_NEW_PROJECT({ commit }) {
+            axios.post('https://jsonplaceholder.typicode.com/todos')
+                .then(r => r.data)
+                .then(project => {
+                    commit('ADD_PROJECT', { project: response.data })
+                }).catch()
+        },
+
     },
     mutations: {
-        SET_PROJECTS (state, projects) {
+        SET_PROJECTS(state, projects) {
             state.projects = projects
-          }
+        },
+        ADD_PROJECT(state, project) {
+            state.projects.push(project)
+        },
+
     }
 })

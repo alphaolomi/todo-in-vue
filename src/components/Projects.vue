@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <h1>Projects</h1>
-    <!-- <table class="table table-striped">
+     <button type="button" class="button" @click="addProject()">Add New Project</button>
+    <table class="table table-striped">
       <thead>
         <tr>
           <th>ID</th>
@@ -16,16 +17,21 @@
           <td>{{ project.completed }}</td>
         </tr>
       </tbody>
-    </table> -->
+    </table>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'PRoejcts',
+  name: 'Projects',
   mounted () {
-    this.$store.dispatch('loadProjects')
+    this.$store.dispatch('FETCH_PROJECTS')
+  },
+   methods: {
+    addProject () {
+      this.$store.dispatch('ADD_NEW_PROJECT')
+    }
   },
   computed: mapState([
     'projects'
