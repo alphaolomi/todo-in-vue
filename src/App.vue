@@ -8,6 +8,7 @@
       <router-link to="/login">Login</router-link>
       <router-link to="/project/1">Project</router-link>
       <router-link to="/redirect">Redirect</router-link>
+      <router-link to="/projects/create">Add</router-link>
     </nav>
     <router-view/>
   </div>

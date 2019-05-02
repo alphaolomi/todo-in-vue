@@ -25,7 +25,7 @@ export default new Vuex.Store({
             axios.post('https://jsonplaceholder.typicode.com/todos')
                 .then(r => r.data)
                 .then(project => {
-                    commit('ADD_PROJECT', { project: response.data })
+                    commit('ADD_PROJECT', { project })
                 }).catch()
         },
 

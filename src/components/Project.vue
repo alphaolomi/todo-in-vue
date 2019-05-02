@@ -12,7 +12,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'Project',
   mounted () {
-    this.$store.dispatch('loadProjects')
+    this.$store.dispatch('FETCH_PROJECTS')
   },
   computed: mapState([
     'projects'
