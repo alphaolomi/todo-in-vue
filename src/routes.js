@@ -21,7 +21,7 @@ const routes = [
     { path: '/login', component: Login ,name: 'login'},
 
     { path: '/projects/create', component: AddProject ,name:'add_project'},
-    { path: '/project/:id', component: Project ,name:'project'},
+    { path: '/projects/:id', component: Project ,name:'project'},
     { path: '/projects', component: Projects ,name:'projects'},
 
     { path: '/redirect', component: Redirect, name: 'redirect' },
