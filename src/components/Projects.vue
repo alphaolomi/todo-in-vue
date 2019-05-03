@@ -20,9 +20,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="hover:bg-grey-lighter" v-for="project in projects" :key="project.id">
-              <td class="py-4 px-6 border-b border-grey-light">{{ project.id }}</td>
-              <td class="py-4 px-6 border-b border-grey-light">{{ project.title }}</td>
+            <tr class="hover:bg-grey-lighter" v-for="project in projects" :key="project.id" >
+            
+              <td class="py-4 px-6 border-b border-grey-light">{{ project.id }}
+              </td>
+              <td class="py-4 px-6 border-b border-grey-light"><a :href="'projects/'+project.id" class="text-grey-darker no-underline font-bold">{{ project.title }}</a></td>
               <td class="py-4 px-6 border-b border-grey-light">{{ project.completed }}</td>
               <td class="border-b border-grey-light">
                 <a

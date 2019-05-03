@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="mx-auto container mt-6 self-center ">
+  <div id="app" class="mx-auto container mt-6 self-center">
     <nav
       class="font-sans flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full"
     >
@@ -18,18 +18,24 @@
       </div>
 
       <div class="sm:mb-0 self-center">
-        
-        <a href="#" class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1">Link1</a>
-        <a
-          href="#"
+      <router-link   class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1" to="/">Index</router-link>
+      <router-link   class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1" to="/home">Home</router-link>
+      <router-link   class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1" to="/projects">Projects</router-link>
+
+
+
+
+        <router-link
           class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
-        >Link2</a>
-        <!-- <a href="/two" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">About Us</a> -->
-        <a
-          href="#"
+          to="/register"
+        >Register</router-link>
+        <router-link
           class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
-        >Link3</a>
-        
+          to="/login"
+        >Login</router-link>
+
+
+
       </div>
     </nav>
 
