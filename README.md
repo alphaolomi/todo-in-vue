@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+  <a href="#"><img src="https://travis-ci.com/alphaolomi/todo-in-vue.svg?branch=master" alt="Build Statua"></a>
 </p>
 
 ## Progress
