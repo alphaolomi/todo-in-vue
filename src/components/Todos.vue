@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import TodoItem from './TodoItem.vue';
+import TodoItem from "./TodoItem.vue";
 
 export default {
   name: "Todos",
@@ -15,10 +15,7 @@ export default {
     TodoItem
   },
   props: ["todos"]
-}
+};
 </script>
 
-<style scoped>
-
-</style>
-
+<style scoped></style>
