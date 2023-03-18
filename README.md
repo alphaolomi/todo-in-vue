@@ -1,5 +1,9 @@
 <h1 align="center">Todo In Vue</h1>
-<p align="center">A simple todo manager, responsive and bare minimal application based on Vue. Made with ❤️ in Tanzania.</p>
+
+<p align="center">
+Moved to <a  href="https://github.com/alphaolomi/todo-vue-app">https://github.com/alphaolomi/todo-vue-app</a>
+<br>
+A simple todo manager, responsive and bare minimal application based on Vue. Made with ❤️ in Tanzania.</p>
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
